@@ -25,8 +25,15 @@ Returns: ['dyoll', 'eimaj'];
 const getNames = (arr) => {
   // Solution code here...
 
-  const names = arr.map(user => user.name);
-  return names;
+  let newArr = arr.map((i) => {
+
+    let x=i.name.split('');
+    let y=x.reverse();
+    let all=y.join('');
+    return all;
+  }
+  );
+  return newArr;
 
 
 
@@ -82,7 +89,7 @@ console.log(a) prints { fullName: 'Octavia Estelle Butler', yearBorn: 1947 }
 
 const addBirthYearProperty = (obj, year) => {
   // Solution code here...
-
+  obj['yearBorn'] = year;
 };
 
 /* ------------------------------------------------------------------------------------------------

@@ -74,14 +74,26 @@ const howMuchPencil = (str) => {
   let result = [];
   // Solution code here...//jjjj
 
-  for (let i = 0; str.length < i; i--) {
-    result = str.slice(1);
+  for (let i = 0;i < str.length; i++) {
+    let x = str.slice(i);
+    result.push(x);
 
   }
 
-
+  result.push("");
   return result;
 };
+// const howMuchPencil = (str) => {
+//   // Solution code here...
+//   let newArr = [];
+
+//   for (let i = 0; i < str.length; i++) {
+//     let newStr = str.substring(i);
+//     newArr.push(newStr);
+//   }
+//   newArr.push("");
+//   return newArr;
+// };
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 5
@@ -142,6 +154,8 @@ const gruffaloCrumble = {
 const listFoods = (recipe) => {
   let result = [];
   // Solution code here...
+
+  
   return result;
 };
 

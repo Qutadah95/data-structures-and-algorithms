@@ -74,7 +74,7 @@ const howMuchPencil = (str) => {
   let result = [];
   // Solution code here...//jjjj
 
-  for (let i = 0;i < str.length; i++) {
+  for (let i = 0; i < str.length; i++) {
     let x = str.slice(i);
     result.push(x);
 
@@ -151,11 +151,20 @@ const gruffaloCrumble = {
 };
 
 
+let result = [];
 const listFoods = (recipe) => {
-  let result = [];
-  // Solution code here...
 
-  
+  let array1 = recipe;
+  let array2 = array1.ingredients.splice(',');
+  for (let i = 0; i < array2.length; i++) {
+    let array3 = [array2[i]];
+    let string = array3.toString();
+    let newArr = string.split(' ');
+    newArr.splice(0, 2);
+    let string2 = newArr.join(' ');
+
+    result.push(string2);
+  }
   return result;
 };
 

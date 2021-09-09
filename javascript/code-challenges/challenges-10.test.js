@@ -115,7 +115,7 @@ const salesData = (hours, data) => {
   // Solution code here...
   let array = [];
   for (let i= 0; i < 12; i++) {
-    array.push({sales : data[i] + 'cookies',time : hours[i]});
+    array.push({sales : data[i] + ' cookies',time : hours[i]});
   }
   return array;
 };
